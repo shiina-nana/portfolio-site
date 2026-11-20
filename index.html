@@ -85,6 +85,14 @@
   .tbl div{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;}
   .tbl div:last-child{border-bottom:none;} .tbl b{color:var(--gold-dark);font-weight:600;} .tbl span{color:var(--sub);}
   @media(max-width:640px){.ba{grid-template-columns:1fr;} .ba-arrow{transform:rotate(90deg);} .svc{grid-template-columns:1fr;} ul.dots{grid-template-columns:1fr;} .tbl div{grid-template-columns:1fr;gap:0;}}
+  .bn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .bn-grid.two{grid-template-columns:repeat(2,1fr);max-width:600px;}
+  .bn{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;}
+  .bn img{width:100%;display:block;border-radius:6px;}
+  .bn a{display:block;}
+  .bn-title{font-size:15px;margin:22px 0 4px;font-weight:600;}
+  .bn-cap{color:var(--sub);font-size:13.5px;margin-bottom:12px;}
+  @media(max-width:640px){.bn-grid,.bn-grid.two{grid-template-columns:1fr 1fr;} .bn-grid .bn:last-child:nth-child(odd){grid-column:1/-1;max-width:50%;}}
   .fade{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;}
   .fade.in{opacity:1;transform:none;}
   @media(prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none;} html{scroll-behavior:auto;}}
@@ -101,7 +109,7 @@
 <body>
 
 <nav><div class="wrap">
-  <a href="#numbers">実績</a><a href="#lp">LP・フォーム</a><a href="#mail">メルマガ</a><a href="#auto">業務改善</a><a href="#services">対応業務</a><a href="#skill">スキル</a><a href="#contact">ご相談</a>
+  <a href="#numbers">実績</a><a href="#lp">LP・フォーム</a><a href="#mail">メルマガ</a><a href="#banner">バナー</a><a href="#auto">業務改善</a><a href="#services">対応業務</a><a href="#skill">スキル</a><a href="#contact">ご相談</a>
 </div></nav>
 
 <div class="wrap">
@@ -184,6 +192,26 @@
       <div class="cap">業務委託（教育系クライアント）のメルマガ。校舎名・担当名・連絡先を差し替え可能にしたテンプレート設計。</div>
       <a class="full" href="assets/mail-hamakids.jpg" target="_blank" rel="noopener">全体を見る →</a>
     </div>
+  </div>
+</section>
+
+<section id="banner" class="fade">
+  <h2><small>BANNER &amp; FLYER</small>バナー・チラシ制作</h2>
+  <p class="intro">セール告知から商品訴求まで、バナー・チラシのクリエイティブも制作しています。</p>
+
+  <div class="bn-title">ヘアケア福袋セール　告知チラシ（3枚組）</div>
+  <p class="bn-cap">1枚目で世界観とセール内容を伝え、2・3枚目でセット内容・価格・おすすめの方を整理。比較しやすい構成にしました。</p>
+  <div class="bn-grid">
+    <div class="bn"><a href="assets/banner-hair-1.jpg" target="_blank" rel="noopener"><img src="assets/banner-hair-1.jpg" alt="ヘアケア福袋セールのメインビジュアル" loading="lazy"></a></div>
+    <div class="bn"><a href="assets/banner-hair-2.jpg" target="_blank" rel="noopener"><img src="assets/banner-hair-2.jpg" alt="福袋セットA〜Eの内容と価格" loading="lazy"></a></div>
+    <div class="bn"><a href="assets/banner-hair-3.jpg" target="_blank" rel="noopener"><img src="assets/banner-hair-3.jpg" alt="福袋セットF・Gと各アイテムの特徴" loading="lazy"></a></div>
+  </div>
+
+  <div class="bn-title">キッズドレス　商品訴求バナー（2点）</div>
+  <p class="bn-cap">着用イメージを主役に、特徴を3つのアイコンに絞って伝えるビジュアル。</p>
+  <div class="bn-grid two">
+    <div class="bn"><a href="assets/banner-dress-blue.jpg" target="_blank" rel="noopener"><img src="assets/banner-dress-blue.jpg" alt="プリンセスドレスの訴求バナー" loading="lazy"></a></div>
+    <div class="bn"><a href="assets/banner-dress-white.jpg" target="_blank" rel="noopener"><img src="assets/banner-dress-white.jpg" alt="コンクール向けドレスの訴求バナー" loading="lazy"></a></div>
   </div>
 </section>
 
