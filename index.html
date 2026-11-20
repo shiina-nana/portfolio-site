@@ -88,6 +88,14 @@
   .fade{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;}
   .fade.in{opacity:1;transform:none;}
   @media(prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none;} html{scroll-behavior:auto;}}
+  @media print{
+    @page{size:A4;margin:12mm;}
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    html{background:#faf7f2;} .wrap{max-width:none;padding:0 4mm;} .num .big{font-size:17px;} .intro{break-after:avoid;} .numbers{grid-template-columns:repeat(3,1fr);}
+    nav{display:none;} .fade{opacity:1!important;transform:none!important;}
+    .card,.num,.shot,.ba-box,.ba{break-inside:avoid;} section{padding-top:28px;} h2{break-after:avoid;}
+    .card:hover{transform:none;box-shadow:none;} .shot .frame{max-height:420px;} .shot a.full{display:none;}
+  }
 </style>
 </head>
 <body>
