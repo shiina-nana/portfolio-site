@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>畑村 椎菜 ポートフォリオ｜メールマーケティング × Web制作 × 業務効率化</title>
+<meta name="description" content="会員約20万件規模のメルマガ運用、LP・申込フォーム制作、GAS・RPAによる業務効率化の実績紹介。">
+<meta property="og:title" content="畑村 椎菜 ポートフォリオ">
+<meta property="og:description" content="メールマーケティング × Web制作 × 業務効率化の実績まとめ">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#2b2620; --sub:#6f6455; --gold:#a8894f; --gold-dark:#8a6d3b;
+    --bg:#faf7f2; --card:#ffffff; --line:#e5dcc9; --chip:#f1e9d8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:64px;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px;}
+
+  nav{position:sticky;top:0;z-index:10;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  nav .wrap{display:flex;gap:22px;justify-content:center;overflow-x:auto;white-space:nowrap;}
+  nav a{color:var(--sub);text-decoration:none;font-size:12.5px;letter-spacing:.1em;padding:14px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav a:hover{color:var(--gold-dark);border-bottom-color:var(--gold);}
+
+  header{padding:72px 0 48px;text-align:center;}
+  header .role{color:var(--gold-dark);letter-spacing:.18em;font-size:12px;margin-bottom:14px;}
+  header h1{font-size:34px;font-weight:600;letter-spacing:.08em;margin-bottom:6px;}
+  header .rule{width:48px;height:2px;background:var(--gold);margin:18px auto 20px;}
+  header p.lead{color:var(--sub);font-size:15px;max-width:640px;margin:0 auto;}
+
+  section{padding:48px 0 8px;}
+  h2{font-size:20px;letter-spacing:.1em;border-left:4px solid var(--gold);padding-left:12px;margin-bottom:8px;}
+  h2 small{display:block;font-size:11px;color:var(--gold-dark);letter-spacing:.2em;font-weight:400;margin-bottom:2px;}
+  .intro{color:var(--sub);font-size:14px;margin:0 0 18px 16px;}
+  h3{font-size:16px;margin-bottom:6px;line-height:1.6;}
+  p{font-size:14.5px;}
+
+  .numbers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px;}
+  .num{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 12px;text-align:center;}
+  .num .big{font-size:22px;font-weight:700;color:var(--gold-dark);line-height:1.4;}
+  .num .lbl{font-size:12px;color:var(--sub);margin-top:2px;}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:14px;transition:transform .2s,box-shadow .2s;}
+  .card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(138,109,59,.10);}
+  .card p{color:var(--sub);font-size:14px;margin-top:4px;}
+  .card a{display:inline-block;margin-top:8px;color:var(--gold-dark);word-break:break-all;font-size:13px;}
+  .tag{display:inline-block;background:var(--chip);color:var(--gold-dark);border-radius:999px;padding:2px 10px;font-size:11.5px;margin:0 6px 4px 0;}
+
+  .shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
+  @media(max-width:640px){.shots{grid-template-columns:1fr;} header h1{font-size:27px;} nav .wrap{justify-content:flex-start;}}
+  .shot{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;}
+  .shot .frame{max-height:520px;overflow:hidden;border-radius:6px;position:relative;}
+  .shot .frame::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#fff);}
+  .shot img{width:100%;display:block;}
+  .shot .cap{font-size:12.5px;color:var(--sub);margin-top:8px;}
+  .shot a.full{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--gold-dark);}
+
+  .chips span{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;margin:0 6px 8px 0;}
+  ul.plain{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 20px;}
+  ul.plain li{font-size:14.5px;padding:10px 0;border-bottom:1px dashed var(--line);}
+  ul.plain li:last-child{border-bottom:none;}
+  footer{margin-top:56px;padding:28px 0 44px;border-top:1px solid var(--line);text-align:center;color:var(--sub);font-size:12.5px;letter-spacing:.08em;}
+
+
+  .ba{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch;margin-bottom:14px;}
+  .ba-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center;}
+  .ba-box.after{border-color:var(--gold);background:#fffdf8;}
+  .ba-lbl{font-size:11px;letter-spacing:.2em;color:var(--gold-dark);}
+  .ba-big{font-size:30px;font-weight:700;color:var(--gold-dark);line-height:1.4;}
+  .ba-big small{font-size:13px;font-weight:400;color:var(--sub);margin-left:2px;}
+  .ba-box p{font-size:12.5px;color:var(--sub);}
+  .ba-arrow{align-self:center;color:var(--gold);font-size:24px;}
+  .ba-result{grid-column:1/-1;text-align:center;background:var(--chip);border-radius:12px;padding:12px;font-size:13px;color:var(--sub);}
+  .ba-result span{display:block;font-size:22px;font-weight:700;color:var(--gold-dark);}
+  dl.case{margin-top:8px;} dl.case dt{display:inline-block;background:var(--chip);color:var(--gold-dark);border-radius:999px;padding:1px 12px;font-size:12px;margin-top:8px;}
+  dl.case dd{font-size:14px;color:var(--sub);}
+  ul.dots{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 20px;margin-top:6px;}
+  ul.dots.one{grid-template-columns:1fr;}
+  ul.dots li{font-size:14px;color:var(--sub);padding-left:14px;position:relative;}
+  ul.dots li::before{content:"";position:absolute;left:0;top:.85em;width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .card.strength{border-left:4px solid var(--gold);}
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;} .svc .card{margin-bottom:0;} .svc{margin-bottom:14px;}
+  .tbl{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 20px;}
+  .tbl div{display:grid;grid-template-columns:170px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+  .tbl div:last-child{border-bottom:none;} .tbl b{color:var(--gold-dark);font-weight:600;} .tbl span{color:var(--sub);}
+  @media(max-width:640px){.ba{grid-template-columns:1fr;} .ba-arrow{transform:rotate(90deg);} .svc{grid-template-columns:1fr;} ul.dots{grid-template-columns:1fr;} .tbl div{grid-template-columns:1fr;gap:0;}}
+  .fade{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;}
+  .fade.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none;} html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#numbers">実績</a><a href="#lp">LP・フォーム</a><a href="#mail">メルマガ</a><a href="#auto">業務改善</a><a href="#services">対応業務</a><a href="#skill">スキル</a><a href="#contact">ご相談</a>
+</div></nav>
+
+<div class="wrap">
+
+<header>
+  <div class="role">EMAIL MARKETING × WEB PRODUCTION × AUTOMATION</div>
+  <h1>畑村 椎菜 ポートフォリオ</h1>
+  <div class="rule"></div>
+  <p class="lead">メールマーケティングを中心に約10年。会員約20万件規模のメルマガ運用を一人で担当し、LP・申込フォームの制作から、GAS・RPAによる業務効率化、MAツールの移行対応まで幅広く手がけています。</p>
+</header>
+
+<section id="numbers" class="fade">
+  <h2><small>HIGHLIGHTS</small>実績ハイライト</h2>
+  <div class="numbers">
+    <div class="num"><div class="big">約20万件</div><div class="lbl">メルマガ配信規模（月3回）</div></div>
+    <div class="num"><div class="big">約40%</div><div class="lbl">メルマガ開封率（最高46%）</div></div>
+    <div class="num"><div class="big">月200万〜700万円</div><div class="lbl">メルマガ経由の成約</div></div>
+    <div class="num"><div class="big">20〜30本</div><div class="lbl">LP・フォーム制作数</div></div>
+    <div class="num"><div class="big">4〜5時間→約30分</div><div class="lbl">RPAによる予約確認業務の自動化（約90％削減）</div></div>
+    <div class="num"><div class="big">10本以上</div><div class="lbl">GAS自動化スクリプト</div></div>
+  </div>
+</section>
+
+<section id="lp" class="fade">
+  <h2><small>LANDING PAGE &amp; FORM</small>LP・申込フォーム制作</h2>
+  <p class="intro">会員制クラブ（宿泊・観光）の公開ページです。いずれもデザインからコーディングまで一人で制作しました（b→dashで構築）。</p>
+
+  <div class="card">
+    <h3>日本料理 赤坂紙音「特選おせち」注文LP＋申込フォーム</h3>
+    <span class="tag">LP設計</span><span class="tag">申込フォーム</span><span class="tag">商品ストーリー</span>
+    <p>商品の世界観づくりから、お重の内容（アコーディオン表示）、注文フロー、注意事項の整理までを1ページに設計。</p>
+    <a href="https://form.kpg-customerclub.jp/osechi-shion2027" target="_blank" rel="noopener">form.kpg-customerclub.jp/osechi-shion2027</a>
+  </div>
+
+  <div class="card">
+    <h3>博多廊 おせち「慶」LP</h3>
+    <span class="tag">導線設計</span><span class="tag">TableCheck連携</span><span class="tag">FAQ</span>
+    <p>店舗受取（TableCheck予約・事前決済）と配送（申込フォーム）で受け取り方法ごとに導線を分岐。商品概要・注文フロー・FAQを備えた単体完結型のLP。</p>
+    <a href="https://form.kpg-customerclub.jp/hakatarou-osechi2027lp" target="_blank" rel="noopener">form.kpg-customerclub.jp/hakatarou-osechi2027lp</a>
+  </div>
+
+  <div class="card">
+    <h3>雅しゅとうとう「謹製おせち重・寄せ鍋重」注文LP＋申込フォーム</h3>
+    <span class="tag">JavaScript</span><span class="tag">金額計算</span><span class="tag">申込フォーム</span>
+    <p>個数ボタンで合計金額が変わる金額計算をJavaScriptで実装。2商品の比較と内容表示を整理。</p>
+    <a href="https://form.kpg-customerclub.jp/osechi-gashu2027" target="_blank" rel="noopener">form.kpg-customerclub.jp/osechi-gashu2027</a>
+  </div>
+
+  <div class="card">
+    <h3>レストラン特別優待プランのご案内ページ</h3>
+    <span class="tag">情報設計</span><span class="tag">大規模ページ</span>
+    <p>東京・大阪エリアの多数のレストランプランを、価格・会員特典・利用条件のカード形式で一覧化した大規模ページ。</p>
+    <a href="https://form.kpg-customerclub.jp/kpcc-dm-restaurant-2027-01-04" target="_blank" rel="noopener">form.kpg-customerclub.jp/kpcc-dm-restaurant-2027-01-04</a>
+  </div>
+
+  <div class="card">
+    <h3>贈答用ギフトチケット申込LP＋フォーム</h3>
+    <span class="tag">LP設計</span><span class="tag">申込フォーム</span>
+    <p>チケット種別（10万円／15万円／フリー）の説明、利用フロー、利用条件を整理した申込ページ。</p>
+    <a href="https://form.kpg-customerclub.jp/giftticket" target="_blank" rel="noopener">form.kpg-customerclub.jp/giftticket</a>
+  </div>
+
+  <div class="card">
+    <h3>その他のフォーム</h3>
+    <p>年始ご宿泊申込フォーム（DM連動）／赤沢エントリー（DM連動）／登録情報変更フォーム／入会フォーム など、申込導線まわりのフォームを多数制作。</p>
+  </div>
+</section>
+
+<section id="mail" class="fade">
+  <h2><small>EMAIL</small>メルマガ制作</h2>
+  <p class="intro">文面・デザイン・HTML・配信設定・計測まで一貫して担当しています。</p>
+  <div class="shots">
+    <div class="shot">
+      <div class="frame"><img src="assets/mail-kpg.jpg" alt="会員制クラブの月次メルマガ制作例" loading="lazy"></div>
+      <div class="cap">会員制クラブの月次メルマガ（文面・デザイン・HTML・配信設定・計測を担当）。TOPICS構成＋施設カード＋CTA設計。</div>
+      <a class="full" href="assets/mail-kpg.jpg" target="_blank" rel="noopener">全体を見る →</a>
+    </div>
+    <div class="shot">
+      <div class="frame"><img src="assets/mail-hamakids.jpg" alt="教育系クライアントのメルマガテンプレート制作例" loading="lazy"></div>
+      <div class="cap">業務委託（教育系クライアント）のメルマガ。校舎名・担当名・連絡先を差し替え可能にしたテンプレート設計。</div>
+      <a class="full" href="assets/mail-hamakids.jpg" target="_blank" rel="noopener">全体を見る →</a>
+    </div>
+  </div>
+</section>
+
+<section id="auto" class="fade">
+  <h2><small>BUSINESS AUTOMATION</small>GAS・RPAによる業務改善</h2>
+  <p class="intro">現場の課題を、業務自動化によって解決する。<br>日々の業務における手作業や重複処理を見直し、業務の効率化と人的ミスの削減に取り組んでいます。</p>
+  <div class="chips" style="margin:0 0 18px 16px;"><span>Google Apps Script</span><span>JavaScript</span><span>Google スプレッドシート</span><span>RPA</span></div>
+
+  <div class="ba">
+    <div class="ba-box"><div class="ba-lbl">BEFORE</div><div class="ba-big">4〜5時間<small>/日</small></div><p>予約情報の確認・転記などを手作業で実施</p></div>
+    <div class="ba-arrow">→</div>
+    <div class="ba-box after"><div class="ba-lbl">AFTER</div><div class="ba-big">約30分<small>/日</small></div><p>RPAによる処理自動化と確認作業の効率化</p></div>
+    <div class="ba-result"><span>約90％削減</span>業務負荷の軽減と作業時間の短縮</div>
+  </div>
+
+  <div class="card">
+    <h3>代表事例：予約確認業務の効率化</h3>
+    <dl class="case">
+      <dt>課題</dt><dd>予約情報の確認・転記などに多くの作業時間を要し、日常業務を圧迫していました。</dd>
+      <dt>取り組み</dt><dd>既存の業務フローを見直し、RPAを活用した処理の自動化と運用方法の改善を実施。</dd>
+      <dt>成果</dt><dd>1日あたり約4〜5時間を要していた業務を、約30分に短縮。作業時間を約90％削減しました。</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>その他の自動化・改善領域</h3>
+    <ul class="dots">
+      <li>日報・会議資料の自動作成</li><li>予約顧客一覧の自動更新</li><li>贈答用チケットの管理</li><li>受付返信メールの自動化</li><li>成約チェック表の更新</li><li>勤怠管理表の自動化</li><li>顧客情報の照合・データ整備</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>MAツール移行・データ設計</h3>
+    <p>MAツール移行（SATORI→b→dash）の実務対応（ベンダー調整、SPF／DKIM／DMARCのDNS設定まわりの調整）。部署ごとに異なるシステム間のデータ統合設計、他部署の配信代行、会員登録・メール送信の仕組み設計。</p>
+  </div>
+
+  <div class="card strength">
+    <h3>強み</h3>
+    <p>現場の業務内容を理解したうえで、実際の運用に適した自動化を検討・実装できることです。作業を自動化するだけでなく、導入後も継続して利用できる仕組みづくりを重視しています。</p>
+  </div>
+</section>
+
+<section id="services" class="fade">
+  <h2><small>SERVICES</small>業務委託・対応可能業務</h2>
+  <div class="svc" style="margin-top:16px;">
+    <div class="card"><h3>CRM・メールマーケティング</h3>
+      <ul class="dots one"><li>b→dashを使用したメール配信設定・運用</li><li>HTMLメールの制作・修正</li><li>セグメント配信・配信対象者の管理</li><li>配信結果の集計・分析</li></ul></div>
+    <div class="card"><h3>Web制作・フォーム構築</h3>
+      <ul class="dots one"><li>LP・Webページの制作・更新</li><li>HTML・CSSによるデザイン調整</li><li>JavaScriptによる機能追加</li><li>Webフォームの制作・改善</li><li>バナー・配信用クリエイティブ制作</li></ul></div>
+    <div class="card"><h3>業務改善・自動化</h3>
+      <ul class="dots one"><li>Google Apps Scriptによる業務自動化</li><li>Google スプレッドシートの管理・効率化</li><li>顧客データの照合・整備</li><li>既存業務フローの改善提案</li></ul></div>
+  </div>
+  <div class="card">
+    <h3>対応スタイル</h3>
+    <p>リモートでの継続的な運用支援や、制作・改善業務への参画を想定しています。単発の制作業務から、既存業務の運用改善、継続的なマーケティング支援まで、業務内容に応じてご相談いただけます。</p>
+  </div>
+</section>
+
+<section id="skill" class="fade">
+  <h2><small>SKILLS</small>スキル</h2>
+  <div class="tbl" style="margin-top:16px;">
+    <div><b>CRM・MA</b><span>b→dash、SATORI</span></div>
+    <div><b>Web</b><span>HTML、CSS、JavaScript、WordPress</span></div>
+    <div><b>Automation</b><span>Google Apps Script、RPA</span></div>
+    <div><b>Data</b><span>Google スプレッドシート、Excel</span></div>
+    <div><b>Reservation / CRM</b><span>TableCheck、OPERA、陣屋コネクト、Sansan</span></div>
+    <div><b>Creative</b><span>LP制作、バナー制作、HTMLメール制作</span></div>
+  </div>
+</section>
+
+<section id="contact" class="fade">
+  <h2><small>CONTACT</small>キャリア・お仕事のご相談</h2>
+  <p class="intro">CRM運用、メールマーケティング、Web制作、業務改善・自動化などの領域で、新たな業務機会を検討しています。企業での実務経験と業務委託での運用経験を活かし、課題整理から制作・実装・継続運用まで柔軟に対応いたします。</p>
+  <ul class="plain">
+    <li>勤務形態：フルリモート（在宅）</li>
+    <li>稼働時間：平日 7:30〜15:30 を中心（会議は平日15:30まで対応可）</li>
+    <li>契約形態：業務委託の継続契約を中心に、単発案件も対応可</li>
+    <li>チャットでの連絡は業務時間内、即レスが得意です</li>
+    <li>メールアドレス：<a href="mailto:7roiyaru7@gmail.com" style="color:var(--gold-dark)">7roiyaru7@gmail.com</a></li>
+  </ul>
+</section>
+
+<footer>© 2026 Shiina Hatamura — Portfolio</footer>
+
+</div>
+<script>
+  const els=document.querySelectorAll('.fade');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.08});
+    els.forEach(el=>io.observe(el));
+  }else{els.forEach(el=>el.classList.add('in'));}
+</script>
+</body>
+</html>
