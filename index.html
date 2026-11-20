@@ -29,6 +29,12 @@
   header .rule{width:48px;height:2px;background:var(--gold);margin:18px auto 20px;}
   header p.lead{color:var(--sub);font-size:15px;max-width:640px;margin:0 auto;}
 
+  header h1{font-weight:400;margin-bottom:0;}
+  header h1 .nm{display:block;font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:clamp(44px,9vw,68px);font-weight:600;letter-spacing:.22em;text-indent:.22em;line-height:1.25;}
+  header h1 .en{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px;font-size:12px;letter-spacing:.34em;color:var(--gold-dark);font-weight:400;}
+  header h1 .en i{display:inline-block;width:4px;height:4px;background:var(--gold);transform:rotate(45deg);}
+  header .tagline{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:17px;letter-spacing:.12em;margin:0 0 18px;}
+  header .lead{font-size:14px;}
   section{padding:48px 0 8px;}
   h2{font-size:20px;letter-spacing:.1em;border-left:4px solid var(--gold);padding-left:12px;margin-bottom:8px;}
   h2 small{display:block;font-size:11px;color:var(--gold-dark);letter-spacing:.2em;font-weight:400;margin-bottom:2px;}
@@ -116,8 +122,9 @@
 
 <header>
   <div class="role">EMAIL MARKETING × WEB PRODUCTION × AUTOMATION</div>
-  <h1>畑村 椎菜 ポートフォリオ</h1>
+  <h1><span class="nm">畑村 椎菜</span><span class="en">SHIINA HATAMURA<i></i>PORTFOLIO</span></h1>
   <div class="rule"></div>
+  <p class="tagline">届けるのも、省くのも、ちょうどよく。</p>
   <p class="lead">メールマーケティングを中心に約10年。会員約20万件規模のメルマガ運用を一人で担当し、LP・申込フォームの制作から、GAS・RPAによる業務効率化、MAツールの移行対応まで幅広く手がけています。</p>
 </header>
 
