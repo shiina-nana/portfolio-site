@@ -68,6 +68,8 @@
   .work:first-of-type{border-top:none;padding-top:0;}
   .work figure{margin:16px 0 4px;}
   .work figure img{width:100%;display:block;border:1px solid var(--line);}
+  .work .pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px;}
+  .work .pair figure{margin:0;}
   .work p{margin-top:8px;}
   .work .url{font-size:13px;word-break:break-all;}
   .more{margin-top:8px;padding-top:20px;border-top:1px dotted var(--gold);}
@@ -99,6 +101,7 @@
     .nums{grid-template-columns:1fr;gap:20px;}
     .mail,.svc{grid-template-columns:1fr;}
     .bn-grid{grid-template-columns:1fr 1fr;}
+    .work .pair{grid-template-columns:1fr;}
     dl.skills div{grid-template-columns:1fr;gap:0;}
   }
   @media print{
@@ -120,7 +123,7 @@
 <header>
   <span class="script">Shiina Hatamura</span>
   <h1>畑村 椎菜</h1>
-  <p>メールマーケティングを約10年やっています。会員約20万人のメルマガをつくって配信しながら、LP・申込フォームの制作や、GAS・RPAでの業務の自動化もしてきました。</p>
+  <p>メールマーケティング歴は約10年。会員約20万人のメルマガをつくって配信しながら、LP・申込フォームの制作や、GAS・RPAでの業務の自動化も担当してきました。</p>
   <svg class="sprig" viewBox="0 0 120 20" aria-hidden="true" fill="none" stroke="#a98a55" stroke-width="1"><path d="M2 10H118"/><path d="M60 10c-6-7-14-7-18-4 5 3 12 4 18 4zM60 10c6-7 14-7 18-4-5 3-12 4-18 4zM60 10c-5 5-11 6-15 4M60 10c5 5 11 6 15 4"/></svg>
 </header>
 
@@ -130,7 +133,7 @@
     <div><b>約40%</b><span>メルマガ開封率（最高46%）</span></div>
     <div><b>月200〜700万円</b><span>メルマガ経由の成約</span></div>
   </div>
-  <p class="nums-note sub">LP・申込フォームはこれまで20〜30本ほど制作。GASの自動化スクリプトは10本以上つくり、RPAで1日5時間かかっていた予約確認を1時間未満にしました。</p>
+  <p class="nums-note sub">LP・申込フォームは20〜30本ほど制作してきました。GASの自動化スクリプトは10本以上。RPAでは、1日5時間かかっていた予約確認を1時間未満まで減らしました。</p>
 </section>
 
 <section id="mail">
@@ -138,37 +141,38 @@
   <p class="sub" style="margin:-8px 0 24px;">文面、デザイン、HTML、配信設定、配信後の計測まで一貫して担当しています。</p>
   <div class="mail">
     <figure>
-      <div class="frame"><img src="assets/mail-kpg.jpg" alt="会員制クラブの月次メルマガ" loading="lazy"></div>
-      <figcaption>会員制クラブの月次メルマガ。TOPICS、施設ごとの紹介、申込ボタンの順に組んでいます。<br><a href="assets/mail-kpg.jpg" target="_blank" rel="noopener">全体を見る</a></figcaption>
+      <div class="frame"><img src="assets/mail-newsletter.jpg" alt="大手飲食・宿泊グループの月次メルマガ" loading="lazy"></div>
+      <figcaption>大手飲食・宿泊グループの月次メルマガ。季節のごあいさつから始めて、TOPICS、施設ごとの紹介、申込ボタンへと、上から読めば流れがつかめる順に組んでいます。<br><a href="assets/mail-newsletter.jpg" target="_blank" rel="noopener">全体を見る</a></figcaption>
     </figure>
     <figure>
       <div class="frame"><img src="assets/mail-hamakids.jpg" alt="教育系クライアントのメルマガテンプレート" loading="lazy"></div>
-      <figcaption>業務委託で担当している教育系クライアントのメルマガ。校舎名・担当者名・連絡先を差し替えるだけで使えるテンプレートにしました。<br><a href="assets/mail-hamakids.jpg" target="_blank" rel="noopener">全体を見る</a></figcaption>
+      <figcaption>業務委託で担当している教育系クライアントのメルマガ。校舎名・担当者名・連絡先を差し替えるだけで使えるテンプレートにしています。<br><a href="assets/mail-hamakids.jpg" target="_blank" rel="noopener">全体を見る</a></figcaption>
     </figure>
   </div>
 </section>
 
 <section id="lp">
   <h2>LP・申込フォーム</h2>
-  <p class="sub" style="margin:-8px 0 24px;">会員制クラブ（宿泊・観光）の公開ページです。デザインからコーディングまで、b→dash上で制作しました。</p>
+  <p class="sub" style="margin:-8px 0 24px;">飲食・宿泊グループの公開ページです。デザインからコーディングまで、b→dash上で制作しました。</p>
 
   <div class="work">
-    <h3>雅しゅとうとう「謹製おせち重・寄せ鍋重」注文LP＋申込フォーム</h3>
-    <!-- スクショを assets/lp-gashu.jpg に置くと大きく表示されます -->
-    <figure><img src="assets/lp-gashu.jpg" alt="雅しゅとうとう おせち注文LP" loading="lazy" onerror="this.parentNode.remove()"></figure>
-    <p>個数ボタンを押すと合計金額がその場で変わるように、金額計算をJavaScriptで書きました。2つの商品の中身と値段を並べて、比べやすくしています。</p>
-    <a class="url" href="https://form.kpg-customerclub.jp/osechi-gashu2027" target="_blank" rel="noopener">form.kpg-customerclub.jp/osechi-gashu2027</a>
+    <h3>料亭・飲食店「おせち」注文LP＋申込フォーム</h3>
+    <figure><img src="assets/lp-osechi-1.jpg" alt="おせちの注文ページ" loading="lazy"></figure>
+    <p>おせち2種類を並べて、中身と価格を見比べられる構成にしました。数量は「−」「＋」のボタンで選ぶ形で、押すたびに合計金額がその場で変わります。</p>
+    <p>申込フォームは、選んだ内容に応じて入力項目が切り替わるようにJavaScriptを組みました。受け取り方法で「配送」を選ぶと配送先の欄が開き、支払い方法で「請求書払い」、送付方法で「郵送（別のご住所へ）」を選ぶと請求書の送付先欄が出ます。領収書の発行を希望したときだけ、宛名と但し書きの欄があらわれます。</p>
+    <div class="pair">
+      <figure><img src="assets/lp-osechi-1-calc.jpg" alt="数量ボタンと合計金額の自動計算" loading="lazy"><figcaption>数量ボタンで合計金額が変わる</figcaption></figure>
+      <figure><img src="assets/lp-osechi-1-form.jpg" alt="支払い方法や領収書の希望に応じて入力欄が切り替わるフォーム" loading="lazy"><figcaption>請求書払い・領収書希望を選ぶと、必要な欄だけが出る</figcaption></figure>
+    </div>
   </div>
 
   <div class="work">
-    <h3>博多廊 おせち「慶」LP</h3>
-    <!-- スクショを assets/lp-hakata.jpg に置くと大きく表示されます -->
-    <figure><img src="assets/lp-hakata.jpg" alt="博多廊 おせち「慶」LP" loading="lazy" onerror="this.parentNode.remove()"></figure>
-    <p>受け取り方法で申込先が変わる案件でした。店舗受取はTableCheckの予約・事前決済へ、配送は申込フォームへ進むように、ページの途中で道を分けています。商品概要、注文の流れ、FAQまでこの1ページで完結します。</p>
-    <a class="url" href="https://form.kpg-customerclub.jp/hakatarou-osechi2027lp" target="_blank" rel="noopener">form.kpg-customerclub.jp/hakatarou-osechi2027lp</a>
+    <h3>和食店「おせち」LP</h3>
+    <figure><img src="assets/lp-osechi-2.jpg" alt="和食店のおせちページ" loading="lazy"></figure>
+    <p>受け取り方法で申込先が変わる案件でした。店舗受け取りはTableCheckの予約・事前決済へ、配送は申込フォームへ進むように、ページの途中で導線を分けています。商品の紹介から注文の流れ、よくあるご質問まで、この1ページで完結するようにまとめました。</p>
   </div>
 
-  <p class="more sub">ほかに、赤坂紙音の特選おせちLP、ギフトチケット申込LP、年始宿泊の申込フォーム、入会・登録変更フォームなど、LP・フォームを20〜30本ほど制作しています。</p>
+  <p class="more sub">ほかに、和食店の特選おせちLP、ギフトチケットの申込LP、年始の宿泊予約フォーム、入会・登録変更フォームなども制作しています。</p>
 </section>
 
 <section id="banner">
@@ -200,7 +204,7 @@
   <h2>GAS・RPAでの業務改善</h2>
   <h3>予約確認をRPAで自動化</h3>
   <div class="ba"><b>1日5時間</b><small>から</small><b class="after">1時間未満</b><small>に</small></div>
-  <p>予約情報の確認・転記を毎日手作業でしていたところを、RPAで自動化しました。</p>
+  <p>予約情報の確認と転記を、毎日手作業でやっていました。そこをRPAにして、確認にかかる時間を1時間未満まで落としています。</p>
 
   <h3 style="margin-top:32px;">GASでつくったもの（10本以上）</h3>
   <ul class="list">
